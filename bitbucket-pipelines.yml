@@ -8,7 +8,7 @@ definitions:
           - maven
           - sonar
         script:
-          - mvn verify sonar:sonar -Dsonar.projectKey=bitbucket-sonar-demo -Dsonar.projectName='bitbucket-sonar-demo' -Dsonar.host.url=${SONAR_HOST_URL} -Dsonar.token=${SONAR_TOKEN}
+          - mvn clean verify sonar:sonar -Dsonar.projectKey=bitbucket-sonar-demo -Dsonar.projectName='bitbucket-sonar-demo' -Dsonar.host.url=${SONAR_HOST_URL} -Dsonar.token=${SONAR_TOKEN}
   caches:
     sonar: ~/.sonar
 
